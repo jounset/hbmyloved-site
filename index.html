@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тебе 21 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Manrope:wght@400;700;800;900&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="memory-bg" aria-hidden="true">
+    <img class="bg-photo active" src="assets/memory-1.jpg" alt="">
+<img class="bg-photo " src="assets/memory-2.jpg" alt="">
+<img class="bg-photo " src="assets/memory-3.jpg" alt="">
+<img class="bg-photo " src="assets/memory-4.jpg" alt="">
+<img class="bg-photo " src="assets/memory-5.jpg" alt="">
+<img class="bg-photo " src="assets/memory-6.jpg" alt="">
+<img class="bg-photo " src="assets/memory-7.jpg" alt="">
+<img class="bg-photo " src="assets/memory-8.jpg" alt="">
+<img class="bg-photo " src="assets/memory-9.jpg" alt="">
+<img class="bg-photo " src="assets/memory-10.jpg" alt="">
+  </div>
+
+  <section class="screen active">
+    <div class="app">
+      <div class="badge">private memory app</div>
+      <div class="number">21</div>
+      <h1>скоро тебе 21</h1>
+      <p class="main-intro">Прежде чем ты дойдёшь до самого главного сюрприза, нам нужно совершить небольшое путешествие. Погрузись в те самые воспоминания, из которых соткана твоя история.</p>
+      <p class="small-intro">Этот день — день, когда на свет появилась любовь всей моей жизни. Пусть этот год принесёт тебе столько же радости, сколько ты даришь мне каждый день. А этот сайт будет радовать тебя каждую неделю до того самого дня.</p>
+      <button data-next>начать историю</button>
+    </div>
+  </section>
+
+  <section class="screen">
+    <div class="app">
+      <div class="card">
+        <div class="icon">🍼</div>
+        <h2>С чего всё началось...</h2>
+        <div class="scratch-wrap">
+          <img src="assets/main-photo.jpg" alt="Детское фото">
+          <canvas id="scratch"></canvas>
+          <div class="hint">сотри слой пальцем, как ластиком ✨</div>
+        </div>
+        <div class="reaction show note-only">Маленький зая. Сейчас ты вырос, но остался таким же милым. Люблю тебя.</div>
+        <div class="nav-row"><button class="back-btn" data-prev>назад</button><button data-next>дальше</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen">
+    <div class="app">
+      <div class="card">
+        <div class="icon">🥣</div>
+        <h2>Что ты всегда хотел съесть, когда шёл домой из садика?</h2>
+        <input placeholder="напиши ответ...">
+        <button class="answer-btn">узнать</button>
+        <div class="reaction"><div class="ok">✓</div><span>Ты вырос, и уже не так хочешь есть кашу. Поэтому в день рождения придумаем что-нибудь поинтереснее 😉</span></div>
+        
+      <div class="memory-gallery">
+        <p>Маленькие воспоминания после ответа:</p>
+        <div class="gallery-grid">
+          <img src="assets/memory-1.jpg" alt="фото-воспоминание">
+<img src="assets/memory-2.jpg" alt="фото-воспоминание">
+<img src="assets/memory-3.jpg" alt="фото-воспоминание">
+        </div>
+      </div>
+    
+        <div class="nav-row"><button class="back-btn" data-prev>назад</button><button data-next>дальше</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen">
+    <div class="app">
+      <div class="card">
+        <div class="icon">🌙</div>
+        <h2>Как звали персонажа из мультфильма, которого ты боялся больше всего?</h2>
+        <input placeholder="напиши ответ...">
+        <button class="answer-btn">узнать</button>
+        <div class="reaction"><div class="ok">✓</div><span>Но теперь ты большой и сильный.</span></div>
+        
+      <div class="memory-gallery">
+        <p>Ещё несколько кадров из маленькой жизни:</p>
+        <div class="gallery-grid">
+          <img src="assets/memory-4.jpg" alt="фото-воспоминание">
+<img src="assets/memory-5.jpg" alt="фото-воспоминание">
+<img src="assets/memory-6.jpg" alt="фото-воспоминание">
+        </div>
+      </div>
+    
+        <div class="nav-row"><button class="back-btn" data-prev>назад</button><button data-next>дальше</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen">
+    <div class="app">
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h2>А теперь — как в 5 лет. Нарисуй солнышко так, как ты умел тогда.</h2>
+        <div class="paint-box">
+          <div class="toolbar">
+            <button class="color active" style="--c:#7c5cff" data-color="#7c5cff"></button>
+            <button class="color" style="--c:#25c7f7" data-color="#25c7f7"></button>
+            <button class="color" style="--c:#ffd84f" data-color="#ffd84f"></button>
+            <button class="color" style="--c:#ff5fa2" data-color="#ff5fa2"></button>
+            <button class="color" style="--c:#34d987" data-color="#34d987"></button>
+          </div>
+          <canvas id="paint"></canvas>
+        </div>
+        <div class="draw-row">
+          <button class="back-btn" onclick="clearPaint()">стереть</button>
+          <button class="finish-draw">готово</button>
+        </div>
+        <div class="reaction"><div class="ok">✓</div><span>Шедевр принят. Самое тёплое солнышко.</span></div>
+        
+      <div class="memory-gallery">
+        <p>И ещё немного детского тепла:</p>
+        <div class="gallery-grid">
+          <img src="assets/memory-7.jpg" alt="фото-воспоминание">
+<img src="assets/memory-8.jpg" alt="фото-воспоминание">
+<img src="assets/memory-9.jpg" alt="фото-воспоминание">
+        </div>
+      </div>
+    
+        <div class="nav-row"><button class="back-btn" data-prev>назад</button><button data-next>дальше</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen">
+    <div class="app">
+      <div class="card">
+        <div class="icon">🧸</div>
+        <h2>Вспомни, как звали твоего первого друга детства.</h2>
+        <input placeholder="напиши имя...">
+        <button class="answer-btn">узнать</button>
+        <div class="reaction"><div class="ok">✓</div><span>Всё верно.</span></div>
+        
+      <div class="memory-gallery">
+        <p>Эти фото появляются только после ответа:</p>
+        <div class="gallery-grid">
+          <img src="assets/memory-2.jpg" alt="фото-воспоминание">
+<img src="assets/memory-5.jpg" alt="фото-воспоминание">
+<img src="assets/memory-10.jpg" alt="фото-воспоминание">
+        </div>
+      </div>
+    
+        <div class="nav-row"><button class="back-btn" data-prev>назад</button><button data-next>дальше</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen">
+    <div class="app">
+      <div class="badge">to be continued</div>
+      <div class="number heart-number">♡</div>
+      <h1>это только начало</h1>
+      <p class="main-intro">На сегодня ты открыл все воспоминания, но история ещё не закончилась.</p>
+      <p class="small-intro">Не грусти: каждую неделю здесь будет появляться новая часть — новые вопросы, маленькие секреты и кусочки нашей истории. Шаг за шагом ты дойдёшь до самого главного сюрприза.</p>
+      <div class="memory-gallery show">
+        <p>А пока — ещё несколько маленьких кадров на память:</p>
+        <div class="gallery-grid">
+          <img src="assets/memory-1.jpg" alt="фото">
+          <img src="assets/memory-7.jpg" alt="фото">
+          <img src="assets/memory-8.jpg" alt="фото">
+        </div>
+      </div>
+      <button class="back-btn" data-prev>назад</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
